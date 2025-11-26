@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>경제성평가 연구 지원 센터</title>
+  <meta name="description" content="경제성평가 연구 지원 센터 — 연구지원, 교육, 컨설팅 및 의뢰 접수를 제공하는 포털" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous">
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0f172a;--muted:#6b7280;--primary:#0369a1}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans","Helvetica Neue",Arial; background:var(--bg); color:var(--accent); margin:0; line-height:1.5}
+    .wrap{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:8px 0 20px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:10px;padding:16px;box-shadow:0 1px 6px rgba(2,6,23,0.06)}
+    .card h3{margin:0 0 8px;font-size:1.05rem}
+    .small{color:var(--muted);font-size:0.95rem}
+    footer{margin-top:28px;padding-top:12px;border-top:1px solid #e6edf3;color:var(--muted);font-size:0.9rem}
+    .btn{display:inline-block;background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+    code{background:#eef2f7;padding:2px 6px;border-radius:6px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace}
+    .list-links{list-style:none;padding:0;margin:0}
+    .list-links li{margin:6px 0}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .section-title{display:flex;align-items:center;gap:10px}
+    .contact-box{background:#f1f6fb;padding:12px;border-radius:8px}
+    label{display:block;margin-top:8px;font-weight:600}
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {width:100%;padding:8px;margin-top:6px;border:1px solid #e2e8f0;border-radius:6px;box-sizing:border-box}
+    textarea{min-height:100px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .full{grid-column:1/-1}
+    .small-note{font-size:0.85rem;color:var(--muted);margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <rect x="2" y="3" width="20" height="18" rx="3" fill="#0369a1"></rect>
+        <path d="M7 9h10M7 13h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+      </svg>
+      <div>
+        <h1>경제성평가 연구 지원 센터</h1>
+        <p class="lead">보건경제 및 경제성평가 연구를 지원합니다 — 연구설계, 모델링, 민감도 분석, 교육 및 컨설팅 서비스를 제공합니다.</p>
+      </div>
+    </header>
+
+    <!-- 핵심 서비스 섹션 -->
+    <section style="margin-top:18px" class="grid">
+      <div class="card">
+        <div class="section-title">
+          <h3>우리의 미션</h3>
+        </div>
+        <p class="small">정확한 경제성평가 방법론과 투명한 절차를 통해 정책 의사결정 및 학술 연구의 품질을 높입니다. 학계, 병원, 정책기관, 산업계의 연구자를 위한 실무 지원을 제공합니다.</p>
+        <div class="meta">
+          <span class="small">운영: 경제성평가 연구 지원 센터</span>
+          <span class="small">담당자: kimnamkwen</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>주요 서비스</h3>
+        <ul class="list-links">
+          <li><strong>연구지원</strong> — Markov/개체 기반 모델 설계, 비용-효과 분석(CEA/CUA/CBA) 지원</li>
+          <li><strong>분석대행</strong> — PSA(확률 민감도 분석), ICER 계산, 비용-효과 평면 및 CEAC 작성</li>
+          <li><strong>교육·워크숍</strong> — R/Python을 이용한 경제성평가 실습 과정</li>
+          <li><strong>컨설팅 / 상담 예약</strong> — 프로젝트 별 상담 및 단기 협업</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>지원 절차(간단)</h3>
+        <ol>
+          <li>요청 접수: 프로젝트 개요 및 요구사항 제출</li>
+          <li>초기 상담: 범위·일정·비용 협의</li>
+          <li>분석 수행: 데이터 확인 → 모델 구현 → 검증</li>
+          <li>결과 전달: 보고서 및 코드 제공, 후속 질의 대응</li>
+        </ol>
+        <p class="small">자세한 템플릿(요청서, 데이터 사양)은 요청 시 제공됩니다.</p>
+      </div>
+    </section>
+
+    <!-- 의뢰자 작성 섹션 -->
+    <section style="margin-top:18px" class="card" id="client-section">
+      <h3>의뢰자 작성 (프로젝트 요청서 템플릿)</h3>
+      <p class="small">아래 양식을 작성하여 제출해 주세요. 현재 예시는 메일 클라이언트로 내용을 전송하는 방식입니다. (제출 수신 이메일: <code>support@example.org</code> — 실제 이메일로 변경해 주세요.)</p>
+
+      <form id="clientForm">
+        <div class="form-grid">
+          <div>
+            <label for="projectTitle">프로젝트 제목</label>
+            <input id="projectTitle" name="projectTitle" type="text" placeholder="예: COVID-19 백신 비용효과분석" required>
+          </div>
+          <div>
+            <label for="affiliation">소속 / 연구자</label>
+            <input id="affiliation" name="affiliation" type="text" placeholder="기관 / 연구자 이름" required>
+          </div>
+
+          <div>
+            <label for="contactEmail">연락 이메일</label>
+            <input id="contactEmail" name="contactEmail" type="email" placeholder="you@example.org" required>
+          </div>
+          <div>
+            <label for="contactPhone">연락처 (선택)</label>
+            <input id="contactPhone" name="contactPhone" type="tel" placeholder="+82-10-1234-5678">
+          </div>
+
+          <div class="full">
+            <label for="researchObjective">연구 목적 / 개요</label>
+            <textarea id="researchObjective" name="researchObjective" placeholder="연구 목적, 정책적 질문, 대상집단 등을 간략히 적어주세요." required></textarea>
+          </div>
+
+          <div class="full">
+            <label for="primaryQuestion">핵심 연구 질문</label>
+            <textarea id="primaryQuestion" name="primaryQuestion" placeholder="예: 신규 치료법이 기존 치료에 비해 비용대비 효과적인가?" required></textarea>
+          </div>
+
+          <div>
+            <label>데이터 보유 여부</label>
+            <select id="dataAvailability" name="dataAvailability">
+              <option value="있음">있음</option>
+              <option value="없음">없음</option>
+              <option value="부분적">부분적</option>
+            </select>
+          </div>
+          <div>
+            <label for="dataFormat">데이터 형식 / 주요 파일</label>
+            <input id="dataFormat" name="dataFormat" type="text" placeholder="CSV, Excel, 건강보험청구자료 등">
+          </div>
+
+          <div class="full">
+            <label>분석 요구사항 (중복 선택 가능)</label>
+            <div class="small-note">
+              <label><input type="checkbox" name="analysisReq" value="Markov"> Markov 모델</label><br>
+              <label><input type="checkbox" name="analysisReq" value="Individual"> 개체 기반 모델</label><br>
+              <label><input type="checkbox" name="analysisReq" value="PSA"> PSA (확률 민감도 분석)</label><br>
+              <label><input type="checkbox" name="analysisReq" value="ICER"> ICER 계산</label><br>
+              <label><input type="checkbox" name="analysisReq" value="CEAC"> CEAC 작성</label><br>
+              <label><input type="checkbox" name="analysisReq" value="Costing"> 원가분석(Costing)</label><br>
+              <label><input type="checkbox" name="analysisReq" value="Other"> 기타(아래 메모에 기재)</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="timeHorizon">시간 수평 (예: 5년, 평생)</label>
+            <input id="timeHorizon" name="timeHorizon" type="text" placeholder="예: 10년">
+          </div>
+          <div>
+            <label for="discountRate">할인율 (%)</label>
+            <input id="discountRate" name="discountRate" type="text" placeholder="예: 3">
+          </div>
+
+          <div class="full">
+            <label for="outcomes">주요 결과 지표</label>
+            <input id="outcomes" name="outcomes" type="text" placeholder="예: QALY, 생존률, 비용">
+          </div>
+
+          <div>
+            <label for="budget">예산(선택)</label>
+            <input id="budget" name="budget" type="text" placeholder="예: 300만원">
+          </div>
+          <div>
+            <label for="timeline">희망 기간</label>
+            <input id="timeline" name="timeline" type="text" placeholder="예: 8주">
+          </div>
+
+          <div class="full">
+            <label for="deliverables">기대 산출물</label>
+            <textarea id="deliverables" name="deliverables" placeholder="보고서, 코드, 시각화, 프레젠테이션 등"></textarea>
+          </div>
+
+          <div class="full">
+            <label for="additionalNotes">추가 요청 사항 / 메모</label>
+            <textarea id="additionalNotes" name="additionalNotes" placeholder="추가로 알릴 내용"></textarea>
+          </div>
+
+          <div class="full">
+            <label><input type="checkbox" id="consent" required> 개인정보 제공 및 분석 의뢰에 대한 기본 동의(데이터 전송 시 개인정보 보호 규정 준수)</label>
+            <p class="small-note">실제 서비스 연결 시 별도의 데이터 전송 가이드(익명화, 동의서 등)를 제공하겠습니다.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+          <button type="submit" class="btn">의뢰서 제출 (메일 열기)</button>
+          <a class="btn" style="background:#4b5563;color:#fff;text-decoration:none" href="#contact">직접 문의</a>
+        </div>
+      </form>
+
+      <p class="small-note" style="margin-top:10px">참고: 현재 제출 기능은 예시이며, 실제 접수 시스템(서버 API / Google Form 등) 연동을 원하시면 알려주세요.</p>
+    </section>
+
+    <!-- 예시 시각화 -->
+    <section style="margin-top:18px" class="card">
+      <h3>예시 시각화: 비용-효과 평면 (PSA 샘플)</h3>
+      <p class="small">아래는 예시 PSA 데이터를 이용한 비용-효과 산점도입니다. 실제 프로젝트의 데이터로 교체하여 사용할 수 있습니다.</p>
+      <canvas id="cePlane" width="900" height="420"></canvas>
+      <div class="meta" style="margin-top:8px">
+        <div class="small">예시 ICER: <code id="icer">계산 중...</code></div>
+        <a class="btn" href="#client-section" style="margin-left:auto">의뢰서 작성하러 가기</a>
+      </div>
+    </section>
+
+    <!-- 리소스 및 팀 -->
+    <section style="margin-top:18px" class="grid">
+      <div class="card" id="resources">
+        <h3>리소스</h3>
+        <p class="small">R 패키지: heemod, BCEA, hesim, dampack 등 / Python: pandas, numpy, plotly 등</p>
+        <p class="small">아래는 GitHub 저장소 자리표시자입니다. 실제 리포지터리 목록을 주시면 요약과 링크를 추가하겠습니다.</p>
+        <ul class="list-links">
+          <li>https://github.com/OWNER/REPO-1 (예: Markov 모델 예제)</li>
+          <li>https://github.com/OWNER/REPO-2 (예: PSA & 시각화)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>팀 및 연락</h3>
+        <p class="small"><strong>센터장</strong>: kimnamkwen</p>
+        <div class="contact-box">
+          <p class="small" id="contact">상담 요청: 이메일 또는 GitHub 이슈로 프로젝트 요약(양식 사용 권장)을 제출해 주세요.</p>
+          <p class="small">예: support@example.org 또는 GitHub 이슈</p>
+        </div>
+        <p class="small" style="margin-top:8px">원하시면 상담 예약 폼(구글폼/Typeform)이나 예약 위젯을 삽입해 드립니다.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div>README에는 서비스 안내, 의뢰서 템플릿, 기여 및 배포 방법이 포함되어 있습니다.</div>
+      <div style="margin-top:8px">다음 단계: 실제 접수 이메일 또는 제출 방식(폼/서버)을 알려주시면 폼을 실무용으로 연결해 드립니다.</div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script>
+    // 의뢰서 폼 제출: mailto 방식으로 메일 클라이언트 열기 (예시)
+    document.getElementById('clientForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const toEmail = 'support@example.org'; // 실제 수신 이메일로 변경하세요
+      const title = document.getElementById('projectTitle').value || '(제목 없음)';
+      const affiliation = document.getElementById('affiliation').value || '';
+      const email = document.getElementById('contactEmail').value || '';
+      const phone = document.getElementById('contactPhone').value || '';
+      const objective = document.getElementById('researchObjective').value || '';
+      const question = document.getElementById('primaryQuestion').value || '';
+      const dataAvail = document.getElementById('dataAvailability').value || '';
+      const dataFormat = document.getElementById('dataFormat').value || '';
+      const timeHorizon = document.getElementById('timeHorizon').value || '';
+      const discount = document.getElementById('discountRate').value || '';
+      const outcomes = document.getElementById('outcomes').value || '';
+      const budget = document.getElementById('budget').value || '';
+      const timeline = document.getElementById('timeline').value || '';
+      const deliverables = document.getElementById('deliverables').value || '';
+      const additional = document.getElementById('additionalNotes').value || '';
+      // analysis requirements (checkboxes)
+      const checks = Array.from(document.querySelectorAll('input[name="analysisReq"]:checked')).map(c=>c.value).join(', ');
+
+      const bodyLines = [
+        `프로젝트 제목: ${title}`,
+        `소속/연구자: ${affiliation}`,
+        `연락 이메일: ${email}`,
+        `연락처: ${phone}`,
+        ``,
+        `연구 목적 / 개요:`,
+        `${objective}`,
+        ``,
+        `핵심 연구 질문:`,
+        `${question}`,
+        ``,
+        `데이터 보유 여부: ${dataAvail}`,
+        `데이터 형식 / 주요 파일: ${dataFormat}`,
+        ``,
+        `분석 요구사항: ${checks}`,
+        `시간 수평: ${timeHorizon}`,
+        `할인율: ${discount}`,
+        `결과 지표: ${outcomes}`,
+        `예산: ${budget}`,
+        `희망 기간: ${timeline}`,
+        `기대 산출물: ${deliverables}`,
+        `추가 메모: ${additional}`,
+        ``,
+        `*본 메일은 자동 생성된 의뢰서 예시입니다. 개인정보 전송 시 기관 내부 규정 및 관련 법규를 확인해 주세요.`
+      ];
+      const subject = `의뢰요청: ${title}`;
+      const mailto = `mailto:${encodeURIComponent(toEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+      window.location.href = mailto;
+    });
+
+    // 샘플 PSA 데이터 생성 (임의)
+    function randomNormal(mean, sd) {
+      let u = 0, v = 0;
+      while(u === 0) u = Math.random();
+      while(v === 0) v = Math.random();
+      const num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+      return num * sd + mean;
+    }
+
+    const n = 250;
+    const baselineCost = 8000, baselineEff = 10;
+    const newCost = 11000, newEff = 11.2;
+
+    const dataPoints = [];
+    for (let i = 0; i < n; i++) {
+      const cA = randomNormal(baselineCost, 800);
+      const eA = randomNormal(baselineEff, 0.8);
+      const cB = randomNormal(newCost, 1200);
+      const eB = randomNormal(newEff, 1.0);
+      dataPoints.push({
+        x: eB - eA, // incremental effect
+        y: cB - cA  // incremental cost
+      });
+    }
+
+    // ICER (점추정) = mean(inc cost) / mean(inc effect)
+    const meanIncCost = dataPoints.reduce((s,p)=>s+p.y,0)/n;
+    const meanIncEff = dataPoints.reduce((s,p)=>s+p.x,0)/n;
+    const icerValue = (meanIncCost/meanIncEff);
+    document.getElementById('icer').textContent = isFinite(icerValue) ? icerValue.toFixed(0) + " KRW per unit effect" : "계산 불가";
+
+    const ctx = document.getElementById('cePlane').getContext('2d');
+    new Chart(ctx, {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'PSA 샘플 (B vs A)',
+          data: dataPoints,
+          backgroundColor: 'rgba(3,105,161,0.85)'
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false }},
+        scales: {
+          x: {
+            title: {display:true, text:'증분 효과 (Δ효과)'},
+            grid: {color: 'rgba(0,0,0,0.05)'}
+          },
+          y: {
+            title: {display:true, text:'증분 비용 (Δ비용, KRW)'},
+            grid: {color: 'rgba(0,0,0,0.05)'}
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+````markdown name=Readme.md
+# 경제성평가 연구 지원 센터 — 저장소 안내
+
+이 저장소는 "경제성평가 연구 지원 센터"의 간단한 정적 웹 포털 템플릿을 제공합니다. 최근 업데이트로 "데이터/코드 공유" 항목을 제거하고, 의뢰인이 작성할 수 있는 구체적인 '의뢰자 작성' 섹션(의뢰서 템플릿 폼)을 추가했습니다.
+
+## 포함된 파일
+- `index.html` : 센터 소개, 서비스, 의뢰서 작성 폼(메일 전송 예시), 예시 시각화가 포함된 메인 페이지
+- `README.md` : 이 파일 — 설치, 커스터마이즈, 의뢰서 사용 가이드
+
+## 센터가 제공하는 주요 서비스 (데이터/코드 공유 항목 제외)
+1. 연구지원
+   - Markov 및 개체 기반 모델 설계·구현
+   - 비용-효과 분석(CEA), 비용-효용분석(CUA), 비용-편익분석(CBA)
+2. 분석대행
+   - 확률 민감도 분석(PSA), ICER 계산, 비용-효과 평면 및 CEAC 작성
+3. 교육·워크숍
+   - R/Python을 이용한 실습 중심 교육과정 제공
+4. 컨설팅 / 상담 예약
+   - 프로젝트 단위 상담, 단기 협업
+
+## 의뢰자 작성 섹션 (index.html)
+- 웹페이지에 의뢰서 템플릿을 추가했습니다. 주요 입력 항목:
+  - 프로젝트 제목, 소속/연구자, 연락 이메일/전화
+  - 연구 목적/개요, 핵심 연구 질문
+  - 데이터 보유 여부 및 형식
+  - 분석 요구사항 (Markov, 개체기반, PSA, ICER, CEAC 등)
+  - 시간 수평, 할인율, 주요 결과 지표, 예산, 희망 기간
+  - 기대 산출물, 추가 메모, 개인정보 동의 체크박스
+- 현재 제출 동작은 mailto: 방식(사용자 이메일 클라이언트를 열어 수신 이메일로 전송)으로 구현되어 있습니다.
+- 기본 수신 이메일은 `support@example.org`로 되어 있으니 실제 운영 이메일로 변경하세요.
+
+## 빠른 시작 (로컬)
+1. 저장소를 클론하거나 파일을 다운로드:
+```bash
+git clone <REPO-URL>
+cd <repo-folder>
