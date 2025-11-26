@@ -235,7 +235,7 @@
     // 의뢰서 폼 제출: mailto 방식으로 메일 클라이언트 열기 (예시)
     document.getElementById('clientForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      const toEmail = 'support@example.org'; // 실제 수신 이메일로 변경하세요
+      const toEmail = 'kimnamkwen@gamil.com'; // 실제 수신 이메일로 변경하세요
       const title = document.getElementById('projectTitle').value || '(제목 없음)';
       const affiliation = document.getElementById('affiliation').value || '';
       const email = document.getElementById('contactEmail').value || '';
@@ -258,7 +258,6 @@
         `프로젝트 제목: ${title}`,
         `소속/연구자: ${affiliation}`,
         `연락 이메일: ${email}`,
-        `연락처: ${phone}`,
         ``,
         `연구 목적 / 개요:`,
         `${objective}`,
@@ -273,7 +272,7 @@
         `시간 수평: ${timeHorizon}`,
         `할인율: ${discount}`,
         `결과 지표: ${outcomes}`,
-        `예산: ${budget}`,
+        `연구비 예산: ${budget}`,
         `희망 기간: ${timeline}`,
         `기대 산출물: ${deliverables}`,
         `추가 메모: ${additional}`,
@@ -343,39 +342,3 @@
   </script>
 </body>
 </html>
-````markdown name=Readme.md
-# 경제성평가 연구 지원 센터 — 저장소 안내
-
-이 저장소는 "경제성평가 연구 지원 센터"의 간단한 정적 웹 포털 템플릿을 제공합니다. 최근 업데이트로 "데이터/코드 공유" 항목을 제거하고, 의뢰인이 작성할 수 있는 구체적인 '의뢰자 작성' 섹션(의뢰서 템플릿 폼)을 추가했습니다.
-
-## 포함된 파일
-- `index.html` : 센터 소개, 서비스, 의뢰서 작성 폼(메일 전송 예시), 예시 시각화가 포함된 메인 페이지
-- `README.md` : 이 파일 — 설치, 커스터마이즈, 의뢰서 사용 가이드
-
-## 센터가 제공하는 주요 서비스 (데이터/코드 공유 항목 제외)
-1. 연구지원
-   - Markov 및 개체 기반 모델 설계·구현
-   - 비용-효과 분석(CEA), 비용-효용분석(CUA), 비용-편익분석(CBA)
-2. 분석대행
-   - 확률 민감도 분석(PSA), ICER 계산, 비용-효과 평면 및 CEAC 작성
-3. 교육·워크숍
-   - R/Python을 이용한 실습 중심 교육과정 제공
-4. 컨설팅 / 상담 예약
-   - 프로젝트 단위 상담, 단기 협업
-
-## 의뢰자 작성 섹션 (index.html)
-- 웹페이지에 의뢰서 템플릿을 추가했습니다. 주요 입력 항목:
-  - 프로젝트 제목, 소속/연구자, 연락 이메일/전화
-  - 연구 목적/개요, 핵심 연구 질문
-  - 데이터 보유 여부 및 형식
-  - 분석 요구사항 (Markov, 개체기반, PSA, ICER, CEAC 등)
-  - 시간 수평, 할인율, 주요 결과 지표, 예산, 희망 기간
-  - 기대 산출물, 추가 메모, 개인정보 동의 체크박스
-- 현재 제출 동작은 mailto: 방식(사용자 이메일 클라이언트를 열어 수신 이메일로 전송)으로 구현되어 있습니다.
-- 기본 수신 이메일은 `support@example.org`로 되어 있으니 실제 운영 이메일로 변경하세요.
-
-## 빠른 시작 (로컬)
-1. 저장소를 클론하거나 파일을 다운로드:
-```bash
-git clone <REPO-URL>
-cd <repo-folder>
