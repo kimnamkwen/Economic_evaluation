@@ -3,342 +3,348 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>경제성평가 연구 지원 센터</title>
-  <meta name="description" content="경제성평가 연구 지원 센터 — 연구지원, 교육, 컨설팅 및 의뢰 접수를 제공하는 포털" />
+  <title>보건의료 빅데이터 및 비교효과연구 경제성평가 센터</title>
+  <meta name="description" content="보건의료 빅데이터 및 비교효과연구 경제성평가 센터 — 연구지원, 교육, 컨설팅 및 의뢰 접수를 제공하는 포털" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous">
   <style>
-    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0f172a;--muted:#6b7280;--primary:#0369a1}
+    :root{--bg:#f7fafc;--card:#fff;--accent:#0f172a;--muted:#6b7280;--primary:#0369a1}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans","Helvetica Neue",Arial; background:var(--bg); color:var(--accent); margin:0; line-height:1.5}
-    .wrap{max-width:1100px;margin:36px auto;padding:24px}
-    header{display:flex;align-items:center;gap:16px}
-    h1{margin:0;font-size:1.6rem}
-    p.lead{margin:8px 0 20px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .card{background:var(--card);border-radius:10px;padding:16px;box-shadow:0 1px 6px rgba(2,6,23,0.06)}
-    .card h3{margin:0 0 8px;font-size:1.05rem}
-    .small{color:var(--muted);font-size:0.95rem}
-    footer{margin-top:28px;padding-top:12px;border-top:1px solid #e6edf3;color:var(--muted);font-size:0.9rem}
-    .btn{display:inline-block;background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
-    code{background:#eef2f7;padding:2px 6px;border-radius:6px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace}
-    .list-links{list-style:none;padding:0;margin:0}
-    .list-links li{margin:6px 0}
-    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-    .section-title{display:flex;align-items:center;gap:10px}
-    .contact-box{background:#f1f6fb;padding:12px;border-radius:8px}
-    label{display:block;margin-top:8px;font-weight:600}
-    input[type="text"], input[type="email"], input[type="tel"], textarea, select {width:100%;padding:8px;margin-top:6px;border:1px solid #e2e8f0;border-radius:6px;box-sizing:border-box}
-    textarea{min-height:100px}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .full{grid-column:1/-1}
-    .small-note{font-size:0.85rem;color:var(--muted);margin-top:6px}
+    .container{max-width:1200px;margin:36px auto;padding:0 0 36px 0;}
+    .main-header{background:var(--card); box-shadow:0 2px 8px rgba(2,6,23,0.06); padding:0 24px;}
+    .logo-section{display:flex;align-items:center;gap:14px;padding:16px 0;}
+    .logo-section h1{margin:0;font-size:1.35rem;}
+    .logo-section .lab-title{color:var(--primary); font-size:1.07rem; font-weight:500; margin-top:2px;}
+    .menu-bar{display:flex;gap:40px; border-bottom:1px solid #e6edf3; font-weight:500;}
+    .menu-bar .menu-item{padding:12px 0;cursor:pointer;position:relative;}
+    .menu-bar .menu-item.active{color:var(--primary);}
+    .layout{display:grid;grid-template-columns:240px 1fr; gap:24px; margin-top:28px;}
+    .side-nav{background:var(--card);border-radius:10px;box-shadow:0 1px 6px rgba(2,6,23,0.04);padding:18px 0;}
+    .side-nav h2{font-size:1.05rem;margin:0 0 12px 24px;}
+    .nav-list{list-style:none;padding:0;margin:0 0 0 24px;}
+    .nav-list li{margin-bottom:10px;}
+    .nav-list .nav-link{display:block;color:var(--accent);padding:4px 0 4px 0;text-decoration:none;border-radius:5px;transition:background 0.2s;}
+    .nav-list .nav-link.active,.nav-list .nav-link:hover{background:#e6edf3;}
+    .main-content{background:var(--card); border-radius:10px; box-shadow:0 1px 6px rgba(2,6,23,0.03); padding:26px; min-height:480px;}
+    .main-content h3{margin-top:0;}
+    .main-content p{color:var(--muted);}
+    footer{margin-top:36px;padding-top:12px;border-top:1px solid #e6edf3;color:var(--muted);font-size:0.9rem;padding-left:24px;}
+    @media (max-width:900px) {
+      .layout{grid-template-columns:1fr;}
+      .side-nav{margin-bottom:16px;}
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-        <rect x="2" y="3" width="20" height="18" rx="3" fill="#0369a1"></rect>
-        <path d="M7 9h10M7 13h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
-      </svg>
-      <div>
-        <h1>경제성평가 연구 지원 센터</h1>
-        <p class="lead">보건경제 및 경제성평가 연구를 지원합니다 — 연구설계, 모델링, 민감도 분석, 교육 및 컨설팅 서비스를 제공합니다.</p>
+  <div class="container">
+    <header class="main-header">
+      <div class="logo-section">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="2" y="3" width="20" height="18" rx="3" fill="#0369a1"></rect>
+          <path d="M7 9h10M7 13h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+        <div>
+          <h1>보건의료 빅데이터 및 비교효과연구 경제성평가 센터</h1>
+          <div class="lab-title">
+            BigCEREE Lab (Center for Big data & Comparative Effectiveness Research, Economic Evaluation in Health and Medicine)
+          </div>
+        </div>
       </div>
+      <nav class="menu-bar" id="main-menu">
+        <div class="menu-item active" data-menu="center">센터 소개</div>
+        <div class="menu-item" data-menu="clinical">임상 연구</div>
+        <div class="menu-item" data-menu="bigdata">빅데이터 분석</div>
+        <div class="menu-item" data-menu="economic">경제성평가</div>
+        <div class="menu-item" data-menu="lecture">강의</div>
+        <div class="menu-item" data-menu="project">프로젝트</div>
+      </nav>
     </header>
-
-    <!-- 핵심 서비스 섹션 -->
-    <section style="margin-top:18px" class="grid">
-      <div class="card">
-        <div class="section-title">
-          <h3>우리의 미션</h3>
-        </div>
-        <p class="small">정확한 경제성평가 방법론과 투명한 절차를 통해 정책 의사결정 및 학술 연구의 품질을 높입니다. 학계, 병원, 정책기관, 산업계의 연구자를 위한 실무 지원을 제공합니다.</p>
-        <div class="meta">
-          <span class="small">운영: 경제성평가 연구 지원 센터</span>
-          <span class="small">담당자: kimnamkwen</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>주요 서비스</h3>
-        <ul class="list-links">
-          <li><strong>연구지원</strong> — Markov/개체 기반 모델 설계, 비용-효과 분석(CEA/CUA/CBA) 지원</li>
-          <li><strong>분석대행</strong> — PSA(확률 민감도 분석), ICER 계산, 비용-효과 평면 및 CEAC 작성</li>
-          <li><strong>교육·워크숍</strong> — R/Python을 이용한 경제성평가 실습 과정</li>
-          <li><strong>컨설팅 / 상담 예약</strong> — 프로젝트 별 상담 및 단기 협업</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>지원 절차(간단)</h3>
-        <ol>
-          <li>요청 접수: 프로젝트 개요 및 요구사항 제출</li>
-          <li>초기 상담: 범위·일정·비용 협의</li>
-          <li>분석 수행: 데이터 확인 → 모델 구현 → 검증</li>
-          <li>결과 전달: 보고서 및 코드 제공, 후속 질의 대응</li>
-        </ol>
-        <p class="small">자세한 템플릿(요청서, 데이터 사양)은 요청 시 제공됩니다.</p>
-      </div>
-    </section>
-
-    <!-- 의뢰자 작성 섹션 -->
-    <section style="margin-top:18px" class="card" id="client-section">
-      <h3>의뢰자 작성 (프로젝트 요청서 템플릿)</h3>
-      <p class="small">아래 양식을 작성하여 제출해 주세요. 현재 예시는 메일 클라이언트로 내용을 전송하는 방식입니다. (제출 수신 이메일: <code>support@example.org</code> — 실제 이메일로 변경해 주세요.)</p>
-
-      <form id="clientForm">
-        <div class="form-grid">
-          <div>
-            <label for="projectTitle">프로젝트 제목</label>
-            <input id="projectTitle" name="projectTitle" type="text" placeholder="예: COVID-19 백신 비용효과분석" required>
-          </div>
-          <div>
-            <label for="affiliation">소속 / 연구자</label>
-            <input id="affiliation" name="affiliation" type="text" placeholder="기관 / 연구자 이름" required>
-          </div>
-
-          <div>
-            <label for="contactEmail">연락 이메일</label>
-            <input id="contactEmail" name="contactEmail" type="email" placeholder="you@example.org" required>
-          </div>
-          <div>
-            <label for="contactPhone">연락처 (선택)</label>
-            <input id="contactPhone" name="contactPhone" type="tel" placeholder="+82-10-1234-5678">
-          </div>
-
-          <div class="full">
-            <label for="researchObjective">연구 목적 / 개요</label>
-            <textarea id="researchObjective" name="researchObjective" placeholder="연구 목적, 정책적 질문, 대상집단 등을 간략히 적어주세요." required></textarea>
-          </div>
-
-          <div class="full">
-            <label for="primaryQuestion">핵심 연구 질문</label>
-            <textarea id="primaryQuestion" name="primaryQuestion" placeholder="예: 신규 치료법이 기존 치료에 비해 비용대비 효과적인가?" required></textarea>
-          </div>
-
-          <div>
-            <label>데이터 보유 여부</label>
-            <select id="dataAvailability" name="dataAvailability">
-              <option value="있음">있음</option>
-              <option value="없음">없음</option>
-              <option value="부분적">부분적</option>
-            </select>
-          </div>
-          <div>
-            <label for="dataFormat">데이터 형식 / 주요 파일</label>
-            <input id="dataFormat" name="dataFormat" type="text" placeholder="CSV, Excel, 건강보험청구자료 등">
-          </div>
-
-          <div class="full">
-            <label>분석 요구사항 (중복 선택 가능)</label>
-            <div class="small-note">
-              <label><input type="checkbox" name="analysisReq" value="Markov"> Markov 모델</label><br>
-              <label><input type="checkbox" name="analysisReq" value="Individual"> 개체 기반 모델</label><br>
-              <label><input type="checkbox" name="analysisReq" value="PSA"> PSA (확률 민감도 분석)</label><br>
-              <label><input type="checkbox" name="analysisReq" value="ICER"> ICER 계산</label><br>
-              <label><input type="checkbox" name="analysisReq" value="CEAC"> CEAC 작성</label><br>
-              <label><input type="checkbox" name="analysisReq" value="Costing"> 원가분석(Costing)</label><br>
-              <label><input type="checkbox" name="analysisReq" value="Other"> 기타(아래 메모에 기재)</label>
-            </div>
-          </div>
-
-          <div>
-            <label for="timeHorizon">시간 수평 (예: 5년, 평생)</label>
-            <input id="timeHorizon" name="timeHorizon" type="text" placeholder="예: 10년">
-          </div>
-          <div>
-            <label for="discountRate">할인율 (%)</label>
-            <input id="discountRate" name="discountRate" type="text" placeholder="예: 3">
-          </div>
-
-          <div class="full">
-            <label for="outcomes">주요 결과 지표</label>
-            <input id="outcomes" name="outcomes" type="text" placeholder="예: QALY, 생존률, 비용">
-          </div>
-
-          <div>
-            <label for="budget">예산(선택)</label>
-            <input id="budget" name="budget" type="text" placeholder="예: 300만원">
-          </div>
-          <div>
-            <label for="timeline">희망 기간</label>
-            <input id="timeline" name="timeline" type="text" placeholder="예: 8주">
-          </div>
-
-          <div class="full">
-            <label for="deliverables">기대 산출물</label>
-            <textarea id="deliverables" name="deliverables" placeholder="보고서, 코드, 시각화, 프레젠테이션 등"></textarea>
-          </div>
-
-          <div class="full">
-            <label for="additionalNotes">추가 요청 사항 / 메모</label>
-            <textarea id="additionalNotes" name="additionalNotes" placeholder="추가로 알릴 내용"></textarea>
-          </div>
-
-          <div class="full">
-            <label><input type="checkbox" id="consent" required> 개인정보 제공 및 분석 의뢰에 대한 기본 동의(데이터 전송 시 개인정보 보호 규정 준수)</label>
-            <p class="small-note">실제 서비스 연결 시 별도의 데이터 전송 가이드(익명화, 동의서 등)를 제공하겠습니다.</p>
-          </div>
-        </div>
-
-        <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
-          <button type="submit" class="btn">의뢰서 제출 (메일 열기)</button>
-          <a class="btn" style="background:#4b5563;color:#fff;text-decoration:none" href="#contact">직접 문의</a>
-        </div>
-      </form>
-
-      <p class="small-note" style="margin-top:10px">참고: 현재 제출 기능은 예시이며, 실제 접수 시스템(서버 API / Google Form 등) 연동을 원하시면 알려주세요.</p>
-    </section>
-
-    <!-- 예시 시각화 -->
-    <section style="margin-top:18px" class="card">
-      <h3>예시 시각화: 비용-효과 평면 (PSA 샘플)</h3>
-      <p class="small">아래는 예시 PSA 데이터를 이용한 비용-효과 산점도입니다. 실제 프로젝트의 데이터로 교체하여 사용할 수 있습니다.</p>
-      <canvas id="cePlane" width="900" height="420"></canvas>
-      <div class="meta" style="margin-top:8px">
-        <div class="small">예시 ICER: <code id="icer">계산 중...</code></div>
-        <a class="btn" href="#client-section" style="margin-left:auto">의뢰서 작성하러 가기</a>
-      </div>
-    </section>
-
-    <!-- 리소스 및 팀 -->
-    <section style="margin-top:18px" class="grid">
-      <div class="card" id="resources">
-        <h3>리소스</h3>
-        <p class="small">R 패키지: heemod, BCEA, hesim, dampack 등 / Python: pandas, numpy, plotly 등</p>
-        <p class="small">아래는 GitHub 저장소 자리표시자입니다. 실제 리포지터리 목록을 주시면 요약과 링크를 추가하겠습니다.</p>
-        <ul class="list-links">
-          <li>https://github.com/OWNER/REPO-1 (예: Markov 모델 예제)</li>
-          <li>https://github.com/OWNER/REPO-2 (예: PSA & 시각화)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>팀 및 연락</h3>
-        <p class="small"><strong>센터장</strong>: kimnamkwen</p>
-        <div class="contact-box">
-          <p class="small" id="contact">상담 요청: 이메일 또는 GitHub 이슈로 프로젝트 요약(양식 사용 권장)을 제출해 주세요.</p>
-          <p class="small">예: support@example.org 또는 GitHub 이슈</p>
-        </div>
-        <p class="small" style="margin-top:8px">원하시면 상담 예약 폼(구글폼/Typeform)이나 예약 위젯을 삽입해 드립니다.</p>
-      </div>
-    </section>
-
+    <div class="layout">
+      <aside class="side-nav" id="side-nav">
+        <!-- 좌측 세부 메뉴 동적 생성 -->
+      </aside>
+      <main class="main-content" id="main-content">
+        <!-- 메인 내용 동적 생성 -->
+      </main>
+    </div>
     <footer>
-      <div>README에는 서비스 안내, 의뢰서 템플릿, 기여 및 배포 방법이 포함되어 있습니다.</div>
-      <div style="margin-top:8px">다음 단계: 실제 접수 이메일 또는 제출 방식(폼/서버)을 알려주시면 폼을 실무용으로 연결해 드립니다.</div>
+      <div>문의 및 의뢰: support@example.org | GitHub: <a href="https://github.com/kimnamkwen/Economic_evaluation">kimnamkwen/Economic_evaluation</a></div>
+      <div style="margin-top:8px">홈페이지의 상세 기능 추가 및 연동 요청시 관리자에게 문의 바랍니다.</div>
     </footer>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <script>
-    // 의뢰서 폼 제출: mailto 방식으로 메일 클라이언트 열기 (예시)
-    document.getElementById('clientForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const toEmail = 'kimnamkwen@gamil.com'; // 실제 수신 이메일로 변경하세요
-      const title = document.getElementById('projectTitle').value || '(제목 없음)';
-      const affiliation = document.getElementById('affiliation').value || '';
-      const email = document.getElementById('contactEmail').value || '';
-      const phone = document.getElementById('contactPhone').value || '';
-      const objective = document.getElementById('researchObjective').value || '';
-      const question = document.getElementById('primaryQuestion').value || '';
-      const dataAvail = document.getElementById('dataAvailability').value || '';
-      const dataFormat = document.getElementById('dataFormat').value || '';
-      const timeHorizon = document.getElementById('timeHorizon').value || '';
-      const discount = document.getElementById('discountRate').value || '';
-      const outcomes = document.getElementById('outcomes').value || '';
-      const budget = document.getElementById('budget').value || '';
-      const timeline = document.getElementById('timeline').value || '';
-      const deliverables = document.getElementById('deliverables').value || '';
-      const additional = document.getElementById('additionalNotes').value || '';
-      // analysis requirements (checkboxes)
-      const checks = Array.from(document.querySelectorAll('input[name="analysisReq"]:checked')).map(c=>c.value).join(', ');
-
-      const bodyLines = [
-        `프로젝트 제목: ${title}`,
-        `소속/연구자: ${affiliation}`,
-        `연락 이메일: ${email}`,
-        ``,
-        `연구 목적 / 개요:`,
-        `${objective}`,
-        ``,
-        `핵심 연구 질문:`,
-        `${question}`,
-        ``,
-        `데이터 보유 여부: ${dataAvail}`,
-        `데이터 형식 / 주요 파일: ${dataFormat}`,
-        ``,
-        `분석 요구사항: ${checks}`,
-        `시간 수평: ${timeHorizon}`,
-        `할인율: ${discount}`,
-        `결과 지표: ${outcomes}`,
-        `연구비 예산: ${budget}`,
-        `희망 기간: ${timeline}`,
-        `기대 산출물: ${deliverables}`,
-        `추가 메모: ${additional}`,
-        ``,
-        `*본 메일은 자동 생성된 의뢰서 예시입니다. 개인정보 전송 시 기관 내부 규정 및 관련 법규를 확인해 주세요.`
-      ];
-      const subject = `의뢰요청: ${title}`;
-      const mailto = `mailto:${encodeURIComponent(toEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-      window.location.href = mailto;
-    });
-
-    // 샘플 PSA 데이터 생성 (임의)
-    function randomNormal(mean, sd) {
-      let u = 0, v = 0;
-      while(u === 0) u = Math.random();
-      while(v === 0) v = Math.random();
-      const num = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
-      return num * sd + mean;
-    }
-
-    const n = 250;
-    const baselineCost = 8000, baselineEff = 10;
-    const newCost = 11000, newEff = 11.2;
-
-    const dataPoints = [];
-    for (let i = 0; i < n; i++) {
-      const cA = randomNormal(baselineCost, 800);
-      const eA = randomNormal(baselineEff, 0.8);
-      const cB = randomNormal(newCost, 1200);
-      const eB = randomNormal(newEff, 1.0);
-      dataPoints.push({
-        x: eB - eA, // incremental effect
-        y: cB - cA  // incremental cost
-      });
-    }
-
-    // ICER (점추정) = mean(inc cost) / mean(inc effect)
-    const meanIncCost = dataPoints.reduce((s,p)=>s+p.y,0)/n;
-    const meanIncEff = dataPoints.reduce((s,p)=>s+p.x,0)/n;
-    const icerValue = (meanIncCost/meanIncEff);
-    document.getElementById('icer').textContent = isFinite(icerValue) ? icerValue.toFixed(0) + " KRW per unit effect" : "계산 불가";
-
-    const ctx = document.getElementById('cePlane').getContext('2d');
-    new Chart(ctx, {
-      type: 'scatter',
-      data: {
-        datasets: [{
-          label: 'PSA 샘플 (B vs A)',
-          data: dataPoints,
-          backgroundColor: 'rgba(3,105,161,0.85)'
-        }]
+    // 각 메뉴와 세부 목록 정의
+    const menuData = {
+      center: {
+        label: "센터 소개",
+        submenus: [
+          {key:"professor", label:"교수소개", content:`
+            <h3>교수소개</h3>
+            <p>센터장: 김남권 교수<br>
+            <br>
+            <strong>약력</strong><br>
+            - 보건경제학 및 경제성평가 전문가<br>
+            - 주요 연구: 정책평가, 의료비용 분석, 건강보험 관련 연구 수행<br>
+            <br>
+            <strong>연구 관심 분야</strong><br>
+            - 경제성평가 방법론<br>
+            - 임상연구 설계<br>
+            - 빅데이터 기반 보건의료 분석<br>
+            <br>
+            자세한 이력 및 연구실적은 <a href="#">교수 상세 프로필</a>에서 확인하실 수 있습니다.
+            </p>
+          `},
+          {key:"paper", label:"발표논문", content:`
+            <h3>발표논문</h3>
+            <p>센터 소속 연구진이 발표한 주요 논문 목록입니다.<br>
+            최신 국제 및 국내 학술지에 게재된 논문과 발표자료를 통해 최신 동향과 연구 성과를 확인할 수 있습니다.<br>
+            <br>
+            <ul>
+              <li>비용-효과 분석에 근거한 치료법 비교 연구 (2024, Health Economics Journal)</li>
+              <li>한국 보건의료 빅데이터를 활용한 의료비 모델링 (2023, Journal of Big Health Data)</li>
+              <li>환자군 기반 경제성평가 연구 (2022, KHEA 학술대회)</li>
+            </ul>
+            논문 PDF 및 요약본은 <a href="#">연구성과 자료실</a>을 통해 다운로드 가능.
+            </p>
+          `},
+          {key:"project", label:"연구사업", content:`
+            <h3>연구사업</h3>
+            <p>
+              센터가 수행 중이거나 완료한 주요 연구사업 소개입니다.<br>
+              <ul>
+                <li>의료정책 평가사업: 복지부 지원 과제, 건강보험제도 분석 등</li>
+                <li>임상 근거 기반 경제성평가 연구</li>
+                <li>빅데이터 기반 환자군 임상 연구</li>
+              </ul>
+              각 연구사업의 개요, 참여기관, 세부 목표 및 진행 상황을 게시합니다.<br>
+              사업별 문의: <a href="mailto:support@example.org">support@example.org</a>
+            </p>
+          `},
+        ]
       },
-      options: {
-        plugins: { legend: { display: false }},
-        scales: {
-          x: {
-            title: {display:true, text:'증분 효과 (Δ효과)'},
-            grid: {color: 'rgba(0,0,0,0.05)'}
-          },
-          y: {
-            title: {display:true, text:'증분 비용 (Δ비용, KRW)'},
-            grid: {color: 'rgba(0,0,0,0.05)'}
-          }
-        }
+      clinical: {
+        label: "임상 연구",
+        submenus: [
+          {key:"case", label:"환자증례보고", content:`
+            <h3>환자증례보고</h3>
+            <p>
+              특이 사례에 대한 임상 증례를 수집·보고하여 진단 및 치료 접근법 개발에 도움을 주는 섹션입니다.<br>
+              증례 보고 작성법, 증례 샘플, 의뢰 절차 안내 등을 제공합니다.<br>
+              임상 현장의 실제 사례를 기반으로 최신 의학적 지식과 논의를 공유합니다.
+            </p>
+          `},
+          {key:"group", label:"환자군연구", content:`
+            <h3>환자군연구</h3>
+            <p>
+              특정 질병 또는 치료법을 적용받은 환자군을 대상으로 시행되는 관찰연구입니다.<br>
+              인구통계, 치료 결과, 장기 추적 데이터 등 표준화 양식을 통해 연구 설계와 데이터 수집 방법을 안내합니다.<br>
+              연구 요약 및 사례 예시를 제공합니다.
+            </p>
+          `},
+          {key:"cross", label:"단면조사연구", content:`
+            <h3>단면조사연구</h3>
+            <p>
+              연구 시점에서 대상 집단의 건강상태, 노출 요인, 질병 발생 여부 등을 조사하는 연구입니다.<br>
+              설문지 개발, 데이터 분석 방법, 결과 해석 안내를 제공합니다.<br>
+              샘플 설문 및 분석 예시 포함.
+            </p>
+          `},
+          {key:"cohort", label:"코호트연구", content:`
+            <h3>코호트연구</h3>
+            <p>
+              일정 기간 동안 특정 인구 집단을 추적하는 연구로, 원인과 결과의 인과관계 분석에 유용합니다.<br>
+              코호트 구축 절차, 데이터 수집·관리, 통계적 분석 방법 안내.<br>
+              주요 코호트 연구 프로젝트 설명 포함.
+            </p>
+          `},
+          {key:"casecontrol", label:"환자대조군연구", content:`
+            <h3>환자대조군연구</h3>
+            <p>
+              질병 환자와 비환자(대조군)를 비교하는 임상연구 방법.<br>
+              선정 기준, 데이터 수집 포맷, 위험요인 평가 절차 안내.<br>
+              국내·국외 추진 예시와 결과 요약 게시.
+            </p>
+          `},
+          {key:"trial", label:"임상시험", content:`
+            <h3>임상시험</h3>
+            <p>
+              신약, 치료법, 의료기기의 효과와 안전성 검증을 위한 체계적 연구.<br>
+              임상시험 설계, 참여자 모집, 시험 관리 및 윤리/법적 가이드 설명.<br>
+              진행 중/완료 시험 목록 및 의뢰 방법 게시.
+            </p>
+          `},
+          {key:"diagnosis", label:"진단검사연구", content:`
+            <h3>진단검사연구</h3>
+            <p>
+              진단 검사법의 정확도, 유효성 검증 위한 연구 및 평가 안내.<br>
+              진단 기준 설정, 통계적 접근 방법, 분석 절차 안내.<br>
+              대표 진단검사 연구 사례와 결과 요약 포함.
+            </p>
+          `}
+        ]
+      },
+      bigdata: {
+        label: "빅데이터 분석",
+        submenus: [
+          {key:"infra", label:"데이터 인프라", content:`
+            <h3>데이터 인프라</h3>
+            <p>
+              보건의료 빅데이터 구축 및 관리 체계, 안전한 데이터 저장 및 활용 인프라 설명.<br>
+              주요 데이터 소스(건강보험 자료, EMR, 의료영상, IoT 기반 데이터 등) 소개.
+            </p>
+          `},
+          {key:"analysis", label:"분석 방법론", content:`
+            <h3>분석 방법론</h3>
+            <p>
+              대규모 임상 및 보건 의료 데이터의 통계·AI 분석 방법(회귀, 클러스터링, 예측 모델 등).<br>
+              최신 기법, 적용 사례, 코드 예시, 소프트웨어(예: Python, R) 활용법 안내.
+            </p>
+          `},
+          {key:"case", label:"응용 사례", content:`
+            <h3>응용 사례</h3>
+            <p>
+              실제 빅데이터 분석 프로젝트의 설계, 수행, 결과 및 활용 사례 제시.<br>
+              질병 예측, 정책 분석, 환자 집단 특성 분석 등 다양한 응용경험을 공유합니다.
+            </p>
+          `},
+        ]
+      },
+      economic: {
+        label: "경제성평가",
+        submenus: [
+          {key:"method", label:"평가 방법론", content:`
+            <h3>평가 방법론</h3>
+            <p>
+              Markov, 개체 기반 모델, 비용-효과/효용/편익 분석(CEA/CUA/CBA) 등 핵심 경제성평가 모델이론 설명.<br>
+              각 모델의 특징, 데이터 요구사항, 분석 절차 안내.<br>
+              건강·의료 정책 결정에 적용 가능한 실무 사례 포함.
+            </p>
+          `},
+          {key:"psa", label:"민감도 분석", content:`
+            <h3>민감도 분석</h3>
+            <p>
+              확률 민감도 분석(PSA), ICER 계산, 비용-효과 평면 및 CEAC 작성 등 경제성평가의 핵심 분석 절차 안내.<br>
+              실제 분석 샘플과 시각화 예시 제공.
+            </p>
+          `},
+          {key:"report", label:"보고서 작성", content:`
+            <h3>보고서 작성</h3>
+            <p>
+              경제성평가 결과 보고서, 도식화, 논문 및 정책 제안서 작성 가이드.<br>
+              최근 서식, 국제/국내 기준, 제출 절차 상세 안내 포함.
+            </p>
+          `}
+        ]
+      },
+      lecture: {
+        label: "강의",
+        submenus: [
+          {key:"schedule", label:"강의 일자", content:`
+            <h3>강의 일자</h3>
+            <p>
+              센터에서 진행하는 강의 및 워크숍 일정, 신청 방법 안내.<br>
+              <ul>
+                <li>보건경제 및 경제성평가 실무 과정</li>
+                <li>빅데이터 분석 입문 및 심화 워크숍</li>
+              </ul>
+              참가 신청: <a href="#">온라인 신청 폼</a>
+            </p>
+          `},
+          {key:"content", label:"강의 정보", content:`
+            <h3>강의 정보</h3>
+            <p>
+              각 강의의 과정 목표, 커리큘럼(강의 주제, 실습 내용), 강사 소개, 수강 후 기대 효과 안내.<br>
+              강의별 PDF, 동영상 자료 제공.
+            </p>
+          `},
+          {key:"request", label:"강의 요청", content:`
+            <h3>강의 요청</h3>
+            <p>
+              맞춤형 강의·세미나·워크숍 요청 방법 안내.<br>
+              기관 또는 기업 대상 강의, 1:1 또는 그룹 교육 대상자 맞춤 커리큘럼 설계 안내.<br>
+              요청 절차: <a href="mailto:support@example.org">이메일 문의</a> 또는 <a href="#">요청 폼</a>
+            </p>
+          `}
+        ]
+      },
+      project: {
+        label: "프로젝트",
+        submenus: [
+          {key:"template", label:"의뢰서 템플릿", content:`
+            <h3>의뢰서 템플릿</h3>
+            <p>
+              프로젝트 의뢰를 위한 표준 템플릿 제공합니다.<br>
+              신청자 정보, 연구 목적, 데이터 현황, 요구 분석 내용, 기간·예산 기입 양식.<br>
+              <a href="#">의뢰서 글자 예시 다운로드</a>
+            </p>
+          `},
+          {key:"list", label:"진행 중 프로젝트", content:`
+            <h3>진행 중 프로젝트</h3>
+            <p>
+              현재 진행 중인 연구프로젝트 목록, 개요, 참여 연구진, 진행 단계, 일정 공개.<br>
+              각 프로젝트별 진행상황 추적 기능과 참여자 프로필 소개.
+            </p>
+          `},
+          {key:"guide", label:"참여 안내", content:`
+            <h3>참여 안내</h3>
+            <p>
+              프로젝트 신규 참여 또는 협업을 희망하는 연구자, 기관, 기업 대상 절차 및 연락 방법 안내.<br>
+              참여신청 절차, 필요서류, 협력 및 지원 옵션 등 상세 안내.
+            </p>
+          `}
+        ]
       }
-    });
+    };
+
+    // 메인 메뉴 클릭 시 세부 메뉴 및 첫 내용 표시
+    const mainMenuEl = document.getElementById('main-menu');
+    const sideNavEl = document.getElementById('side-nav');
+    const mainContentEl = document.getElementById('main-content');
+    let currentMenu = "center";
+    let currentSubKey = menuData[currentMenu].submenus[0].key;
+
+    function renderSideNav(menuKey) {
+      sideNavEl.innerHTML = `<h2>${menuData[menuKey].label} 세부 목록</h2>
+        <ul class="nav-list">
+          ${menuData[menuKey].submenus.map(sub=>
+            `<li><a class="nav-link${sub.key===currentSubKey ? ' active' : ''}" data-sub="${sub.key}" href="#">${sub.label}</a></li>`
+          ).join('')}
+        </ul>`;
+    }
+
+    function renderContent(menuKey, subKey) {
+      const submenu = menuData[menuKey].submenus.find(s=>s.key===subKey);
+      mainContentEl.innerHTML = submenu ? submenu.content : "<p>해당 내용을 불러올 수 없습니다.</p>";
+    }
+
+    function handleMainMenuClick(e) {
+      const target = e.target.closest('.menu-item');
+      if (!target) return;
+      Array.from(mainMenuEl.querySelectorAll('.menu-item')).forEach(mi => mi.classList.remove('active'));
+      target.classList.add('active');
+      const menuKey = target.getAttribute('data-menu');
+      currentMenu = menuKey;
+      currentSubKey = menuData[menuKey].submenus[0].key;
+      renderSideNav(menuKey);
+      renderContent(menuKey, currentSubKey);
+    }
+
+    function handleSubMenuClick(e) {
+      const link = e.target.closest('.nav-link');
+      if (!link) return;
+      e.preventDefault();
+      Array.from(sideNavEl.querySelectorAll('.nav-link')).forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      currentSubKey = link.getAttribute('data-sub');
+      renderContent(currentMenu, currentSubKey);
+    }
+
+    mainMenuEl.addEventListener('click', handleMainMenuClick);
+    sideNavEl.addEventListener('click', handleSubMenuClick);
+
+    // 초기 랜더링
+    renderSideNav(currentMenu);
+    renderContent(currentMenu, currentSubKey);
+
   </script>
 </body>
 </html>
