@@ -5,34 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>보건의료 빅데이터 및 비교효과연구 경제성평가 센터</title>
   <meta name="description" content="보건의료 빅데이터 및 비교효과연구 경제성평가 센터 — 연구지원, 교육, 컨설팅 및 의뢰 접수를 제공하는 포털" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous">
-  <style>
-    :root{--bg:#f7fafc;--card:#fff;--accent:#0f172a;--muted:#6b7280;--primary:#0369a1}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans","Helvetica Neue",Arial; background:var(--bg); color:var(--accent); margin:0; line-height:1.5}
-    .container{max-width:1200px;margin:36px auto;padding:0 0 36px 0;}
-    .main-header{background:var(--card); box-shadow:0 2px 8px rgba(2,6,23,0.06); padding:0 24px;}
-    .logo-section{display:flex;align-items:center;gap:14px;padding:16px 0;}
-    .logo-section h1{margin:0;font-size:1.35rem;}
-    .logo-section .lab-title{color:var(--primary); font-size:1.07rem; font-weight:500; margin-top:2px;}
-    .menu-bar{display:flex;gap:40px; border-bottom:1px solid #e6edf3; font-weight:500;}
-    .menu-bar .menu-item{padding:12px 0;cursor:pointer;position:relative;}
-    .menu-bar .menu-item.active{color:var(--primary);}
-    .layout{display:grid;grid-template-columns:240px 1fr; gap:24px; margin-top:28px;}
-    .side-nav{background:var(--card);border-radius:10px;box-shadow:0 1px 6px rgba(2,6,23,0.04);padding:18px 0;}
-    .side-nav h2{font-size:1.05rem;margin:0 0 12px 24px;}
-    .nav-list{list-style:none;padding:0;margin:0 0 0 24px;}
-    .nav-list li{margin-bottom:10px;}
-    .nav-list .nav-link{display:block;color:var(--accent);padding:4px 0 4px 0;text-decoration:none;border-radius:5px;transition:background 0.2s;}
-    .nav-list .nav-link.active,.nav-list .nav-link:hover{background:#e6edf3;}
-    .main-content{background:var(--card); border-radius:10px; box-shadow:0 1px 6px rgba(2,6,23,0.03); padding:26px; min-height:480px;}
-    .main-content h3{margin-top:0;}
-    .main-content p{color:var(--muted);}
-    footer{margin-top:36px;padding-top:12px;border-top:1px solid #e6edf3;color:var(--muted);font-size:0.9rem;padding-left:24px;}
-    @media (max-width:900px) {
-      .layout{grid-template-columns:1fr;}
-      .side-nav{margin-bottom:16px;}
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -72,36 +45,44 @@
     </footer>
   </div>
   <script>
-    // 각 메뉴와 세부 목록 정의
     const menuData = {
       center: {
         label: "센터 소개",
         submenus: [
           {key:"professor", label:"교수소개", content:`
             <h3>교수소개</h3>
-            <p>센터장: 김남권 교수<br>
-            <br>
-            <strong>약력</strong><br>
-            - 보건경제학 및 경제성평가 전문가<br>
-            - 주요 연구: 정책평가, 의료비용 분석, 건강보험 관련 연구 수행<br>
-            <br>
-            <strong>연구 관심 분야</strong><br>
-            - 경제성평가 방법론<br>
-            - 임상연구 설계<br>
-            - 빅데이터 기반 보건의료 분석<br>
-            <br>
-            자세한 이력 및 연구실적은 <a href="https://drkim.pusan.ac.kr/drkim/index.do" target="_blank">교수 상세 프로필</a>에서 확인하실 수 있습니다.
-            </p>
-            <div style="margin-top:32px;">
-              <hr>
-              <strong>추가 안내</strong><br>
-              메뉴에서 <strong>교수소개</strong> 클릭 시, 화면에 <span style="color:#0369a1;font-weight:500;">교수 상세 프로필</span>을 확인할 수 있습니다.<br>
-              <br>
-              <ul style="margin-bottom:0.5em;">
-                <li>교수 상세 프로필: <a href="https://drkim.pusan.ac.kr/drkim/index.do" target="_blank">https://drkim.pusan.ac.kr/drkim/index.do</a></li>
-                <li>의한협진모니터링센터: <a href="https://www.mcmc.re.kr/" target="_blank">https://www.mcmc.re.kr/</a></li>
-                <li>GitHub: <a href="https://github.com/kimnamkwen/BigCEREE" target="_blank">https://github.com/kimnamkwen/BigCEREE</a></li>
-              </ul>
+            <div class="profile-block">
+              <p><span class="profile-title">센터장:</span> 김남권 교수</p>
+              <div class="profile-section">
+                <strong>약력</strong>
+                <ul>
+                  <li>보건경제학 및 경제성평가 전문가</li>
+                  <li>주요 연구: 정책평가, 의료비용 분석, 건강보험 관련 연구 수행</li>
+                </ul>
+              </div>
+              <div class="profile-section">
+                <strong>연구 관심 분야</strong>
+                <ul>
+                  <li>경제성평가 방법론</li>
+                  <li>임상연구 설계</li>
+                  <li>빅데이터 기반 보건의료 분석</li>
+                </ul>
+              </div>
+              <div class="profile-links">
+                자세한 이력 및 연구실적은 <a href="https://drkim.pusan.ac.kr/drkim/index.do" target="_blank" class="profile-link">교수 상세 프로필</a>에서 확인하실 수 있습니다.
+              </div>
+              <div class="profile-additional">
+                <hr>
+                <div class="profile-additional-title"><strong>추가 안내</strong></div>
+                <div class="profile-additional-content">
+                  메뉴에서 <strong>교수소개</strong> 클릭 시, 화면에 <span class="highlight">교수 상세 프로필</span>을 확인할 수 있습니다.
+                  <ul>
+                    <li>교수 상세 프로필: <a href="https://drkim.pusan.ac.kr/drkim/index.do" target="_blank">https://drkim.pusan.ac.kr/drkim/index.do</a></li>
+                    <li>의한협진모니터링센터: <a href="https://www.mcmc.re.kr/" target="_blank">https://www.mcmc.re.kr/</a></li>
+                    <li>GitHub: <a href="https://github.com/kimnamkwen/BigCEREE" target="_blank">https://github.com/kimnamkwen/BigCEREE</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           `},
           {key:"paper", label:"발표논문", content:`
@@ -355,7 +336,6 @@
     // 초기 랜더링
     renderSideNav(currentMenu);
     renderContent(currentMenu, currentSubKey);
-
   </script>
 </body>
 </html>
