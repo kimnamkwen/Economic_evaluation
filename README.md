@@ -13,6 +13,8 @@
 
 - **교수 상세 프로필:**  
   [https://drkim.pusan.ac.kr/drkim/index.do](https://drkim.pusan.ac.kr/drkim/index.do)
+  [https://drkim.pusan.ac.kr/drkim](https://drkim.pusan.ac.kr/drkim)
   - 좌측 메뉴에서 "교수소개" 클릭 시, 화면에 "교수 상세 프로필" 링크가 나타나며 해당 주소로 연결됩니다.
 
 - GitHub: [kimnamkwen/Economic_evaluation](https://github.com/kimnamkwen/Economic_evaluation)
+- GitHub: [kimnamkwen/Economic_evaluation](https://github.com/kimnamkwen/BigCEREE)
