@@ -15,4 +15,8 @@
   [https://drkim.pusan.ac.kr/drkim/index.do]
   - 메뉴에서 "교수소개" 클릭 시, 화면에 "교수 상세 프로필" 을 확인할 수 있습니다.
 
-- GitHub: [https://github.com/kimnamkwen/BigCEREE]
+- **의한협진모니터링센터:**  
+  [https://www.mcmc.re.kr/]
+
+- **GitHub:**  
+  [https://github.com/kimnamkwen/BigCEREE]
