@@ -1,6 +1,6 @@
 # 보건의료 빅데이터 및 비교효과연구 경제성평가 센터
 
-이 프로젝트는 센터 및 연구실 소개, 임상 및 빅데이터 연구, 경제성 평가, 그리고 프로젝트/강의 정보 제공을 위한 웹 포털 프론트엔드입니다.
+이 프로젝트는 센터 및 연구실 소개, 임상연구, 빅데이터 분석, 경제성 평가, 프로젝트, 강의 정보 제공을 위한 웹 포털 프론트엔드입니다.
 
 ## 주요 화면 기능
 
@@ -12,9 +12,7 @@
 ## 링크 및 참고
 
 - **교수 상세 프로필:**  
-  [https://drkim.pusan.ac.kr/drkim/index.do](https://drkim.pusan.ac.kr/drkim/index.do)
-  [https://drkim.pusan.ac.kr/drkim](https://drkim.pusan.ac.kr/drkim)
-  - 좌측 메뉴에서 "교수소개" 클릭 시, 화면에 "교수 상세 프로필" 링크가 나타나며 해당 주소로 연결됩니다.
+  [https://drkim.pusan.ac.kr/drkim]
+  - 메뉴에서 "교수소개" 클릭 시, 화면에 "교수 상세 프로필" 을 확인할 수 있습니다.
 
-- GitHub: [kimnamkwen/Economic_evaluation](https://github.com/kimnamkwen/Economic_evaluation)
-- GitHub: [kimnamkwen/Economic_evaluation](https://github.com/kimnamkwen/BigCEREE)
+- GitHub: [https://github.com/kimnamkwen/BigCEREE]
